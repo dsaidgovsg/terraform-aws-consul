@@ -260,3 +260,8 @@ variable "iam_instance_profile_name" {
   default     = null
 }
 
+variable "iam_permissions_boundary" {
+  description = "If set, restricts the created IAM role to the given permissions boundary"
+  type        = string
+  default     = null
+}
